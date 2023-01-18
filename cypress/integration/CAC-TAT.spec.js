@@ -104,11 +104,13 @@
             })
     })
 
-    it.only('marca ambos checkboxes, depois desmarca o último', function () {
+    it('marca ambos checkboxes, depois desmarca o último', function () {
         cy.get('input[type="checkbox"]')
         .check()
         .get('input[value="phone"]')
         .uncheck()
         .should('not.be.checked')
     })
+
+
 
